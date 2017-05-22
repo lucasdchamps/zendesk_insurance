@@ -1,0 +1,43 @@
+<script type='text/javascript' src='https://c.la1-c2-par.salesforceliveagent.com/content/g/js/39.0/deployment.js'></script>
+<script type='text/javascript'>
+liveagent.init('https://d.la1-c2-par.salesforceliveagent.com/chat', '5720Y000000XciG', '00D0Y000001Ieev');
+chatOpened = false;
+
+function startChat() {
+  if (chatOpened) {
+    return;
+  }
+
+  liveagent.startChat('5730Y000000Xd3y');
+  chatOpened = true;
+}
+</script>
+
+<style>
+html {
+  background: url('background.png') no-repeat center center fixed;
+  webkit-background-size: cover;
+  moz-background-size: cover;
+  o-background-size: cover;
+  background-size: cover;
+}
+
+#liveagent_button_online_5730Y000000Xd3y {
+  position: fixed;
+  right: 0px;
+  bottom: 350px;
+}
+</style>
+
+<a id="liveagent_button_online_5730Y000000Xd3y" href="javascript://Chat" style="display: none;" onclick="startChat()">
+  <%= image_tag "salesforce.png" %>
+</a>
+<div id="liveagent_button_offline_5730Y000000Xd3y" style="display: none;"><!-- Offline Chat Content --></div>
+
+<script type="text/javascript">
+  if (!window._laq) { window._laq = []; }
+  window._laq.push(function() {
+    liveagent.showWhenOnline('5730Y000000Xd3y', document.getElementById('liveagent_button_online_5730Y000000Xd3y'));
+    liveagent.showWhenOffline('5730Y000000Xd3y', document.getElementById('liveagent_button_offline_5730Y000000Xd3y'));
+  });
+</script>

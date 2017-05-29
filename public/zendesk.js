@@ -41667,6 +41667,8 @@
                                     return t in n || (n[t] = [], o(t) || s(t)), n[t].push(r), e
                                 },
                                 s = function(r) {
+                                    console.log('received enter event')
+                                    console.log(r)
                                     r in a || (a[r] = function(a) {
                                         a && (a.stopPropagation || f(a));
                                         var o, i = n[r],

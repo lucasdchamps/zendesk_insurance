@@ -6,9 +6,10 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'integration', 'data-turbolinks-track': 'reload' %>
 
     <!-- Start of recast Zendesk Widget script -->
-    <script>/*<![CDATA[*/
+    <script>
       window.zEmbed || function(e, t) {
           var n, o, d, i, s, a = [],
               r = document.createElement("iframe");
@@ -44,7 +45,8 @@
               o.write('<body onload="document._l();">'),
               o.close()
       }();
-    /*]]>*/</script>
+      console.log(textarea());
+    </script>
     <!-- End of recast Zendesk Widget script -->
   </head>
 

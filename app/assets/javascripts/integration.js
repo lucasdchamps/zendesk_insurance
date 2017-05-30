@@ -1,6 +1,6 @@
 
 function textarea() {
-  return document.getElementsByClassName('textarea_wrapper jx_ui_Widget')[0].children[0];
+  return document.getElementsByClassName('textarea_wrapper')[0].children[0];
 }
 
 function textareaKeypressed() {

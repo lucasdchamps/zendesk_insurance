@@ -35872,9 +35872,6 @@
                 a(this, t);
                 var r = o(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));
                 return r.handleDropdownOpen = function(e, t) {
-                    console.log('ENTER key pressed')
-                    console.log(e)
-                    console.log(t)
                     var n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     null !== r.props.nestedMenu ? r.props.updateMenu(r.props.nestedMenu, n) : r.props.onClick(n)
                 }, r.openNestedMenuFromKeyboard = function() {
@@ -41670,6 +41667,8 @@
                                     return t in n || (n[t] = [], o(t) || s(t)), n[t].push(r), e
                                 },
                                 s = function(r) {
+                                    console.log('received enter event')
+                                    console.log(r)
                                     r in a || (a[r] = function(a) {
                                         a && (a.stopPropagation || f(a));
                                         var o, i = n[r],
